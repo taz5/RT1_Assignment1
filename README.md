@@ -39,18 +39,18 @@ The pseudocode is as follows:
 2. Robot checks if it is aligned with the token
    - uses drive function to move forward
    - print "Ah, that'll do"
-else if the robot is not well aligned with token
-	uses turn function to either to move left or right
-if distance of silver is not -1 and the distance of the distance of silver is less than the threshold 
-	print "The silver token is close!"
-	if distance of silver token is less than the distance threshold
-	    print "Found it!"
-	    grabs the silver token and puts it behind it.
+3. else if the robot is not well aligned with token
+   - uses turn function to either to move left or right
+4. if distance of silver is not -1 and the distance of the distance of silver is less than the threshold 
+   - print "The silver token is close!"
+   - if distance of silver token is less than the distance threshold
+     - print "Found it!"
+     - grabs the silver token and puts it behind it.
 
-Robot progresses forward till it reaches a wall, which are gold tokens
-Robot checks if distance of gold token is less than the threshold and if the distance is not equal to -1.
-	if the wall distance on one side is greater than the other side
-	    uses turn function to move to the distance that is greater
+5. Robot progresses forward till it reaches a wall, which are gold tokens
+6. Robot checks if distance of gold token is less than the threshold and if the distance is not equal to -1.
+   - if the wall distance on one side is greater than the other side
+     - uses turn function to move to the distance that is greater
 
 The above pseudocode will be done endlessly in the same fashion
 
