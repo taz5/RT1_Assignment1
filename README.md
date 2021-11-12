@@ -37,7 +37,7 @@ The pseudocode is as follows:
 
 Robot start position
 Robot checks if it is aligned with the token
-	uses drive function to move forward
+&nbsp&nbspuses drive function to move forward
 	print "Ah, that'll do"
 else if the robot is not well aligned with token
 	uses turn function to either to move left or right
