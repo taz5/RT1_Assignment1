@@ -35,10 +35,10 @@ $ python2 run.py assignment.py
 
 The pseudocode is as follows:
 
-Robot start position
-Robot checks if it is aligned with the token
-&nbsp&nbspuses drive function to move forward
-	print "Ah, that'll do"
+1. Robot start position
+2. Robot checks if it is aligned with the token
+   - uses drive function to move forward
+   - print "Ah, that'll do"
 else if the robot is not well aligned with token
 	uses turn function to either to move left or right
 if distance of silver is not -1 and the distance of the distance of silver is less than the threshold 
