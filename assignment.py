@@ -99,7 +99,7 @@ def find_golden_token():
     else:
    	return dist, rot_y
 
-# Finding the Golden Token 
+# Finding the Golden Token on the left
 def find_golden_token_left():
     """
     Function to find the closest golden token
@@ -116,7 +116,7 @@ def find_golden_token_left():
     else:
    	return dist
 
-# Finding the Golden Token 
+# Finding the Golden Token on the right
 def find_golden_token_right():
     """
     Function to find the closest golden token
@@ -184,14 +184,8 @@ while 1:
 
     ########### Gold Token Related ##################
     if dist_gold < gold_th and dist_gold!=-1:
-	
-	print("Wait a minute.... Where is the wall?")
-
+		
 	if left_dist>right_dist:
 		turn(-35,0.1)
-		print("Wall on the right"+ str(right_dist)+ ", the distance on the left is: "+str(left_dist))
 	elif right_dist>left_dist:
 		turn(35,0.1)
-		print("Wall on the left"+ str(left_dist)+ ", the distance on the right is: "+str(right_dist))
-	else:
-		print("Distances are equal")
